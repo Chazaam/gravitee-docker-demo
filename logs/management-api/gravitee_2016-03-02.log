@@ -1,0 +1,525 @@
+12:55:56.458 [gravitee] INFO  i.g.management.standalone.Container - Initializing Gravitee Management Standalone context...
+12:55:56.662 [gravitee] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265: startup date [Wed Mar 02 12:55:56 UTC 2016]; root of context hierarchy
+12:55:57.087 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration.
+12:55:57.093 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - 	Gravitee Management configuration loaded from /home/gravitee/config/gravitee.yml
+12:55:57.168 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration. DONE
+12:55:57.210 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [management] implementation: mongodb
+12:55:57.216 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+12:55:57.222 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.mongodb.management.ManagementRepositoryConfiguration
+12:55:57.450 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [analytics] implementation: elasticsearch
+12:55:57.452 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+12:55:57.454 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.elasticsearch.analytics.spring.AnalyticsRepositoryConfiguration
+12:55:57.461 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Loading Management providers Provider
+12:55:57.463 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Found 3 Provider implementation(s)
+12:55:57.465 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider RepositoryProvider [gravitee]
+12:55:57.474 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+12:55:57.475 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+12:55:57.490 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider InMemoryProvider [memory]
+12:55:57.493 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider LdapProvider [ldap]
+12:55:57.496 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.ldap.spring.LdapConfiguration
+12:55:57.496 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.ldap.spring.LdapConfiguration
+12:55:57.575 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+12:55:57.642 [gravitee] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$c6368cdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:55:57.966 [gravitee] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[172.17.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+12:55:57.966 [gravitee] INFO  org.mongodb.driver.cluster - Adding discovered server 172.17.0.1:27017 to client view of cluster
+12:55:58.167 [cluster-ClusterId{value='56d6e2dd4cedfd00144f9ffb', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3}] to 172.17.0.1:27017
+12:55:58.169 [cluster-ClusterId{value='56d6e2dd4cedfd00144f9ffb', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=172.17.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 4, 14]}, minWireVersion=0, maxWireVersion=0, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=912488}
+12:55:58.170 [cluster-ClusterId{value='56d6e2dd4cedfd00144f9ffb', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+12:55:58.500 [gravitee] INFO  org.dozer.config.GlobalSettings - Trying to find Dozer configuration file: dozer.properties
+12:55:58.509 [gravitee] WARN  org.dozer.config.GlobalSettings - Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+12:55:58.512 [gravitee] INFO  org.dozer.DozerInitializer - Initializing Dozer. Version: 5.4.0, Thread Name: gravitee
+12:55:58.516 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+12:55:58.518 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+12:55:58.523 [gravitee] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
+12:55:59.712 [gravitee] INFO  org.elasticsearch.plugins - [Citizen V] loaded [], sites []
+12:56:00.391 [gravitee] INFO  o.s.s.l.DefaultSpringSecurityContextSource -  URL 'ldap://127.0.0.1:33389/dc=gravitee,dc=io', root DN is 'dc=gravitee,dc=io'
+12:56:00.767 [gravitee] INFO  o.s.l.c.s.AbstractContextSource - Property 'userDn' not set - anonymous context will be used for read-write operations
+12:56:00.770 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Setting working directory for LDAP_PROVIDER: /tmp/apacheds-spring-security-18433357245998
+12:56:00.812 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Starting directory server...
+12:56:00.812 [gravitee] WARN  o.a.d.s.core.DefaultDirectoryService - ApacheDS shutdown hook has NOT been registered with the runtime.  This default setting for standalone operation has been overriden.
+12:56:01.270 [gravitee] ERROR o.a.d.s.s.r.DefaultAttributeTypeRegistry - attributeType w/ OID 2.5.4.16 not registered!
+12:56:01.779 [gravitee] INFO  o.a.d.s.c.security.TlsKeyGenerator - Keys and self signed certificate successfully generated.
+12:56:01.916 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Successful bind of an LDAP Service (33389) is completed.
+12:56:01.916 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Ldap service started.
+12:56:01.925 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Loading LDIF file: jar:file:/home/gravitee/lib/gravitee-management-api-providers-ldap-0.5.0.jar!/ldap/gravitee-io-management-rest-api-ldap-test.ldif
+12:56:01.928 [gravitee] ERROR o.a.d.s.p.s.store.LdifFileLoader - LDIF file does not exist.
+12:56:02.060 [gravitee] INFO  org.eclipse.jetty.util.log - Logging initialized @6134ms
+12:56:02.331 [gravitee] INFO  i.g.management.standalone.Container - Start Gravitee Management Standalone...
+12:56:02.331 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [2826176e9e30] is now starting...
+12:56:02.332 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginEventListener
+12:56:02.333 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+12:56:02.334 [gravitee] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+12:56:02.336 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginRegistry
+12:56:02.336 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+12:56:02.337 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+12:56:02.341 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /home/gravitee/plugins
+12:56:02.346 [gravitee] WARN  i.g.p.c.internal.PluginRegistryImpl - No plugin has been found in /home/gravitee/plugins
+12:56:02.346 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry. DONE
+12:56:02.346 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: JettyEmbeddedContainer
+12:56:02.378 [gravitee] WARN  o.e.j.server.handler.ContextHandler - o.e.j.s.ServletContextHandler@283ab206{/,null,null} contextPath ends with /*
+12:56:02.447 [gravitee] INFO  org.eclipse.jetty.server.Server - jetty-9.3.3.v20150827
+12:56:02.483 [gravitee] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /home/gravitee/logs/gravitee_accesslog_2016_03_02.log
+12:56:02.522 [gravitee] INFO  /management - Initializing Spring root WebApplicationContext
+12:56:02.522 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+12:56:02.525 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Mar 02 12:56:02 UTC 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265
+12:56:02.529 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class io.gravitee.management.security.SecurityConfiguration]
+12:56:02.613 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+12:56:02.809 [gravitee] INFO  i.g.m.s.c.b.BasicSecurityConfigurerAdapter - Loading security providers for basic authentication
+12:56:02.810 [gravitee] INFO  i.g.m.p.l.a.LdapAuthenticationProvider - Configuring LDAP provider []
+12:56:03.070 [gravitee] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@223967ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f61e002, org.springframework.security.web.header.HeaderWriterFilter@25de8898, org.springframework.security.web.authentication.logout.LogoutFilter@2a1e57c6, io.gravitee.management.security.config.basic.filter.CORSFilter@4a6a6a69, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3c17bd0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f179f51, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6164e137, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d7f1e59, org.springframework.security.web.session.SessionManagementFilter@64910b2d, org.springframework.security.web.access.ExceptionTranslationFilter@54567b05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54329480]
+12:56:03.098 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 575 ms
+12:56:04.180 [gravitee] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+12:56:04.398 [gravitee] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@283ab206{/management,null,AVAILABLE}
+12:56:04.408 [gravitee] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@5c740c5a{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+12:56:04.410 [gravitee] INFO  org.eclipse.jetty.server.Server - Started @8484ms
+12:56:04.411 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [2826176e9e30 - null] started in 2079 ms.
+13:01:40.204 [gravitee] INFO  i.g.management.standalone.Container - Initializing Gravitee Management Standalone context...
+13:01:40.402 [gravitee] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265: startup date [Wed Mar 02 13:01:40 UTC 2016]; root of context hierarchy
+13:01:40.830 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration.
+13:01:40.834 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - 	Gravitee Management configuration loaded from /home/gravitee/config/gravitee.yml
+13:01:40.903 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration. DONE
+13:01:40.941 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [management] implementation: mongodb
+13:01:40.945 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:01:40.950 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.mongodb.management.ManagementRepositoryConfiguration
+13:01:41.206 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [analytics] implementation: elasticsearch
+13:01:41.209 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:01:41.211 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.elasticsearch.analytics.spring.AnalyticsRepositoryConfiguration
+13:01:41.219 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Loading Management providers Provider
+13:01:41.224 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Found 3 Provider implementation(s)
+13:01:41.225 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider RepositoryProvider [gravitee]
+13:01:41.231 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:01:41.232 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:01:41.244 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider InMemoryProvider [memory]
+13:01:41.246 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider LdapProvider [ldap]
+13:01:41.250 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:01:41.250 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:01:41.341 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:01:41.411 [gravitee] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$c6368cdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:01:41.691 [gravitee] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[172.17.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:01:41.691 [gravitee] INFO  org.mongodb.driver.cluster - Adding discovered server 172.17.0.1:27017 to client view of cluster
+13:01:41.838 [cluster-ClusterId{value='56d6e4354cedfd0015c000fa', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3}] to 172.17.0.1:27017
+13:01:41.851 [cluster-ClusterId{value='56d6e4354cedfd0015c000fa', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=172.17.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 4, 14]}, minWireVersion=0, maxWireVersion=0, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=1620082}
+13:01:41.856 [cluster-ClusterId{value='56d6e4354cedfd0015c000fa', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+13:01:42.230 [gravitee] INFO  org.dozer.config.GlobalSettings - Trying to find Dozer configuration file: dozer.properties
+13:01:42.239 [gravitee] WARN  org.dozer.config.GlobalSettings - Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+13:01:42.242 [gravitee] INFO  org.dozer.DozerInitializer - Initializing Dozer. Version: 5.4.0, Thread Name: gravitee
+13:01:42.246 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+13:01:42.247 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+13:01:42.253 [gravitee] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
+13:01:43.422 [gravitee] INFO  org.elasticsearch.plugins - [Night Thrasher] loaded [], sites []
+13:01:44.021 [gravitee] INFO  o.s.s.l.DefaultSpringSecurityContextSource -  URL 'ldap://127.0.0.1:33389/dc=gravitee,dc=io', root DN is 'dc=gravitee,dc=io'
+13:01:44.507 [gravitee] INFO  o.s.l.c.s.AbstractContextSource - Property 'userDn' not set - anonymous context will be used for read-write operations
+13:01:44.514 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Setting working directory for LDAP_PROVIDER: /tmp/apacheds-spring-security-18777100603358
+13:01:44.584 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Starting directory server...
+13:01:44.584 [gravitee] WARN  o.a.d.s.core.DefaultDirectoryService - ApacheDS shutdown hook has NOT been registered with the runtime.  This default setting for standalone operation has been overriden.
+13:01:45.131 [gravitee] ERROR o.a.d.s.s.r.DefaultAttributeTypeRegistry - attributeType w/ OID 2.5.4.16 not registered!
+13:01:45.713 [gravitee] INFO  o.a.d.s.c.security.TlsKeyGenerator - Keys and self signed certificate successfully generated.
+13:01:45.876 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Successful bind of an LDAP Service (33389) is completed.
+13:01:45.877 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Ldap service started.
+13:01:45.889 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Loading LDIF file: jar:file:/home/gravitee/lib/gravitee-management-api-providers-ldap-0.5.0.jar!/ldap/gravitee-io-management-rest-api-ldap-test.ldif
+13:01:45.892 [gravitee] ERROR o.a.d.s.p.s.store.LdifFileLoader - LDIF file does not exist.
+13:01:46.037 [gravitee] INFO  org.eclipse.jetty.util.log - Logging initialized @6371ms
+13:01:46.329 [gravitee] INFO  i.g.management.standalone.Container - Start Gravitee Management Standalone...
+13:01:46.330 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [2826176e9e30] is now starting...
+13:01:46.330 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginEventListener
+13:01:46.331 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+13:01:46.331 [gravitee] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+13:01:46.333 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginRegistry
+13:01:46.334 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:01:46.334 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+13:01:46.339 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /home/gravitee/plugins
+13:01:46.343 [gravitee] WARN  i.g.p.c.internal.PluginRegistryImpl - No plugin has been found in /home/gravitee/plugins
+13:01:46.344 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry. DONE
+13:01:46.344 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: JettyEmbeddedContainer
+13:01:46.366 [gravitee] WARN  o.e.j.server.handler.ContextHandler - o.e.j.s.ServletContextHandler@283ab206{/,null,null} contextPath ends with /*
+13:01:46.428 [gravitee] INFO  org.eclipse.jetty.server.Server - jetty-9.3.3.v20150827
+13:01:46.458 [gravitee] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /home/gravitee/logs/gravitee_accesslog_2016_03_02.log
+13:01:46.505 [gravitee] INFO  /management - Initializing Spring root WebApplicationContext
+13:01:46.505 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+13:01:46.506 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Mar 02 13:01:46 UTC 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265
+13:01:46.507 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class io.gravitee.management.security.SecurityConfiguration]
+13:01:46.569 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:01:46.724 [gravitee] INFO  i.g.m.s.c.b.BasicSecurityConfigurerAdapter - Loading security providers for basic authentication
+13:01:46.725 [gravitee] INFO  i.g.m.p.l.a.LdapAuthenticationProvider - Configuring LDAP provider []
+13:01:46.961 [gravitee] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@223967ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f61e002, org.springframework.security.web.header.HeaderWriterFilter@25de8898, org.springframework.security.web.authentication.logout.LogoutFilter@2a1e57c6, io.gravitee.management.security.config.basic.filter.CORSFilter@4a6a6a69, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3c17bd0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f179f51, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6164e137, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d7f1e59, org.springframework.security.web.session.SessionManagementFilter@64910b2d, org.springframework.security.web.access.ExceptionTranslationFilter@54567b05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54329480]
+13:01:46.991 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 486 ms
+13:01:48.042 [gravitee] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+13:01:48.258 [gravitee] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@283ab206{/management,null,AVAILABLE}
+13:01:48.267 [gravitee] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@5c740c5a{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+13:01:48.267 [gravitee] INFO  org.eclipse.jetty.server.Server - Started @8602ms
+13:01:48.269 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [2826176e9e30 - null] started in 1937 ms.
+13:22:48.428 [gravitee] INFO  i.g.management.standalone.Container - Initializing Gravitee Management Standalone context...
+13:22:48.628 [gravitee] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265: startup date [Wed Mar 02 13:22:48 UTC 2016]; root of context hierarchy
+13:22:49.044 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration.
+13:22:49.049 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - 	Gravitee Management configuration loaded from /home/gravitee/config/gravitee.yml
+13:22:49.115 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration. DONE
+13:22:49.155 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [management] implementation: mongodb
+13:22:49.160 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:22:49.165 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.mongodb.management.ManagementRepositoryConfiguration
+13:22:49.382 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [analytics] implementation: elasticsearch
+13:22:49.384 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:22:49.386 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.elasticsearch.analytics.spring.AnalyticsRepositoryConfiguration
+13:22:49.393 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Loading Management providers Provider
+13:22:49.395 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Found 3 Provider implementation(s)
+13:22:49.397 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider RepositoryProvider [gravitee]
+13:22:49.402 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:22:49.402 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:22:49.411 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider InMemoryProvider [memory]
+13:22:49.413 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider LdapProvider [ldap]
+13:22:49.416 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:22:49.416 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:22:49.487 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:22:49.560 [gravitee] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$c6368cdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:22:49.883 [gravitee] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[172.17.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:22:49.883 [gravitee] INFO  org.mongodb.driver.cluster - Adding discovered server 172.17.0.1:27017 to client view of cluster
+13:22:50.055 [cluster-ClusterId{value='56d6e9294cedfd0014425db5', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3}] to 172.17.0.1:27017
+13:22:50.057 [cluster-ClusterId{value='56d6e9294cedfd0014425db5', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=172.17.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 4, 14]}, minWireVersion=0, maxWireVersion=0, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=1145662}
+13:22:50.059 [cluster-ClusterId{value='56d6e9294cedfd0014425db5', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+13:22:50.476 [gravitee] INFO  org.dozer.config.GlobalSettings - Trying to find Dozer configuration file: dozer.properties
+13:22:50.486 [gravitee] WARN  org.dozer.config.GlobalSettings - Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+13:22:50.488 [gravitee] INFO  org.dozer.DozerInitializer - Initializing Dozer. Version: 5.4.0, Thread Name: gravitee
+13:22:50.492 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+13:22:50.493 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+13:22:50.498 [gravitee] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
+13:22:51.683 [gravitee] INFO  org.elasticsearch.plugins - [Volcana] loaded [], sites []
+13:22:52.452 [gravitee] INFO  o.s.s.l.DefaultSpringSecurityContextSource -  URL 'ldap://127.0.0.1:33389/dc=gravitee,dc=io', root DN is 'dc=gravitee,dc=io'
+13:22:52.894 [gravitee] INFO  o.s.l.c.s.AbstractContextSource - Property 'userDn' not set - anonymous context will be used for read-write operations
+13:22:52.899 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Setting working directory for LDAP_PROVIDER: /tmp/apacheds-spring-security-20045485359737
+13:22:52.959 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Starting directory server...
+13:22:52.960 [gravitee] WARN  o.a.d.s.core.DefaultDirectoryService - ApacheDS shutdown hook has NOT been registered with the runtime.  This default setting for standalone operation has been overriden.
+13:22:53.438 [gravitee] ERROR o.a.d.s.s.r.DefaultAttributeTypeRegistry - attributeType w/ OID 2.5.4.16 not registered!
+13:22:53.996 [gravitee] INFO  o.a.d.s.c.security.TlsKeyGenerator - Keys and self signed certificate successfully generated.
+13:22:54.137 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Successful bind of an LDAP Service (33389) is completed.
+13:22:54.138 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Ldap service started.
+13:22:54.149 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Loading LDIF file: jar:file:/home/gravitee/lib/gravitee-management-api-providers-ldap-0.5.0.jar!/ldap/gravitee-io-management-rest-api-ldap-test.ldif
+13:22:54.152 [gravitee] ERROR o.a.d.s.p.s.store.LdifFileLoader - LDIF file does not exist.
+13:22:54.295 [gravitee] INFO  org.eclipse.jetty.util.log - Logging initialized @6424ms
+13:22:54.516 [gravitee] INFO  i.g.management.standalone.Container - Start Gravitee Management Standalone...
+13:22:54.517 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [8c713e0fbd27] is now starting...
+13:22:54.517 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginEventListener
+13:22:54.518 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+13:22:54.518 [gravitee] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+13:22:54.521 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginRegistry
+13:22:54.522 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:22:54.522 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+13:22:54.527 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /home/gravitee/plugins
+13:22:54.532 [gravitee] WARN  i.g.p.c.internal.PluginRegistryImpl - No plugin has been found in /home/gravitee/plugins
+13:22:54.532 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry. DONE
+13:22:54.532 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: JettyEmbeddedContainer
+13:22:54.563 [gravitee] WARN  o.e.j.server.handler.ContextHandler - o.e.j.s.ServletContextHandler@283ab206{/,null,null} contextPath ends with /*
+13:22:54.615 [gravitee] INFO  org.eclipse.jetty.server.Server - jetty-9.3.3.v20150827
+13:22:54.647 [gravitee] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /home/gravitee/logs/gravitee_accesslog_2016_03_02.log
+13:22:54.687 [gravitee] INFO  /management - Initializing Spring root WebApplicationContext
+13:22:54.689 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+13:22:54.689 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Mar 02 13:22:54 UTC 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265
+13:22:54.694 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class io.gravitee.management.security.SecurityConfiguration]
+13:22:54.789 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:22:54.973 [gravitee] INFO  i.g.m.s.c.b.BasicSecurityConfigurerAdapter - Loading security providers for basic authentication
+13:22:54.974 [gravitee] INFO  i.g.m.p.l.a.LdapAuthenticationProvider - Configuring LDAP provider []
+13:22:55.261 [gravitee] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@223967ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f61e002, org.springframework.security.web.header.HeaderWriterFilter@25de8898, org.springframework.security.web.authentication.logout.LogoutFilter@2a1e57c6, io.gravitee.management.security.config.basic.filter.CORSFilter@4a6a6a69, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3c17bd0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f179f51, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6164e137, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d7f1e59, org.springframework.security.web.session.SessionManagementFilter@64910b2d, org.springframework.security.web.access.ExceptionTranslationFilter@54567b05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54329480]
+13:22:55.282 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 593 ms
+13:22:56.063 [gravitee] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+13:22:56.242 [gravitee] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@283ab206{/management,null,AVAILABLE}
+13:22:56.251 [gravitee] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@5c740c5a{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+13:22:56.251 [gravitee] INFO  org.eclipse.jetty.server.Server - Started @8381ms
+13:22:56.253 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [8c713e0fbd27 - null] started in 1734 ms.
+13:39:20.328 [gravitee] INFO  i.g.management.standalone.Container - Initializing Gravitee Management Standalone context...
+13:39:20.581 [gravitee] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265: startup date [Wed Mar 02 13:39:20 UTC 2016]; root of context hierarchy
+13:39:21.043 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration.
+13:39:21.051 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - 	Gravitee Management configuration loaded from /home/gravitee/config/gravitee.yml
+13:39:21.125 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration. DONE
+13:39:21.176 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [management] implementation: mongodb
+13:39:21.180 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:39:21.187 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.mongodb.management.ManagementRepositoryConfiguration
+13:39:21.446 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [analytics] implementation: elasticsearch
+13:39:21.448 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:39:21.450 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.elasticsearch.analytics.spring.AnalyticsRepositoryConfiguration
+13:39:21.461 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Loading Management providers Provider
+13:39:21.464 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Found 3 Provider implementation(s)
+13:39:21.465 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider RepositoryProvider [gravitee]
+13:39:21.471 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:39:21.472 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:39:21.483 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider InMemoryProvider [memory]
+13:39:21.486 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider LdapProvider [ldap]
+13:39:21.490 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:39:21.491 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:39:21.574 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:39:21.641 [gravitee] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$c6368cdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:39:22.011 [gravitee] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[172.17.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:39:22.012 [gravitee] INFO  org.mongodb.driver.cluster - Adding discovered server 172.17.0.1:27017 to client view of cluster
+13:39:22.224 [cluster-ClusterId{value='56d6ed0a4cedfd0014019f7f', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3}] to 172.17.0.1:27017
+13:39:22.230 [cluster-ClusterId{value='56d6ed0a4cedfd0014019f7f', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=172.17.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 4, 14]}, minWireVersion=0, maxWireVersion=0, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=4953952}
+13:39:22.232 [cluster-ClusterId{value='56d6ed0a4cedfd0014019f7f', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+13:39:22.629 [gravitee] INFO  org.dozer.config.GlobalSettings - Trying to find Dozer configuration file: dozer.properties
+13:39:22.638 [gravitee] WARN  org.dozer.config.GlobalSettings - Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+13:39:22.641 [gravitee] INFO  org.dozer.DozerInitializer - Initializing Dozer. Version: 5.4.0, Thread Name: gravitee
+13:39:22.645 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+13:39:22.647 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+13:39:22.652 [gravitee] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
+13:39:23.977 [gravitee] INFO  org.elasticsearch.plugins - [Man-Spider] loaded [], sites []
+13:39:24.760 [gravitee] INFO  o.s.s.l.DefaultSpringSecurityContextSource -  URL 'ldap://127.0.0.1:33389/dc=gravitee,dc=io', root DN is 'dc=gravitee,dc=io'
+13:39:25.184 [gravitee] INFO  o.s.l.c.s.AbstractContextSource - Property 'userDn' not set - anonymous context will be used for read-write operations
+13:39:25.189 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Setting working directory for LDAP_PROVIDER: /tmp/apacheds-spring-security-21037775893725
+13:39:25.248 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Starting directory server...
+13:39:25.248 [gravitee] WARN  o.a.d.s.core.DefaultDirectoryService - ApacheDS shutdown hook has NOT been registered with the runtime.  This default setting for standalone operation has been overriden.
+13:39:25.754 [gravitee] ERROR o.a.d.s.s.r.DefaultAttributeTypeRegistry - attributeType w/ OID 2.5.4.16 not registered!
+13:39:26.402 [gravitee] INFO  o.a.d.s.c.security.TlsKeyGenerator - Keys and self signed certificate successfully generated.
+13:39:26.586 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Successful bind of an LDAP Service (33389) is completed.
+13:39:26.586 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Ldap service started.
+13:39:26.611 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Loading LDIF file: jar:file:/home/gravitee/lib/gravitee-management-api-providers-ldap-0.5.0.jar!/ldap/gravitee-io-management-rest-api-ldap-test.ldif
+13:39:26.620 [gravitee] ERROR o.a.d.s.p.s.store.LdifFileLoader - LDIF file does not exist.
+13:39:26.813 [gravitee] INFO  org.eclipse.jetty.util.log - Logging initialized @7109ms
+13:39:27.059 [gravitee] INFO  i.g.management.standalone.Container - Start Gravitee Management Standalone...
+13:39:27.059 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [8c713e0fbd27] is now starting...
+13:39:27.060 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginEventListener
+13:39:27.061 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+13:39:27.061 [gravitee] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+13:39:27.062 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginRegistry
+13:39:27.063 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:39:27.063 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+13:39:27.067 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /home/gravitee/plugins
+13:39:27.071 [gravitee] WARN  i.g.p.c.internal.PluginRegistryImpl - No plugin has been found in /home/gravitee/plugins
+13:39:27.071 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry. DONE
+13:39:27.071 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: JettyEmbeddedContainer
+13:39:27.093 [gravitee] WARN  o.e.j.server.handler.ContextHandler - o.e.j.s.ServletContextHandler@3111631d{/,null,null} contextPath ends with /*
+13:39:27.167 [gravitee] INFO  org.eclipse.jetty.server.Server - jetty-9.3.3.v20150827
+13:39:27.228 [gravitee] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /home/gravitee/logs/gravitee_accesslog_2016_03_02.log
+13:39:27.280 [gravitee] INFO  /management - Initializing Spring root WebApplicationContext
+13:39:27.280 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+13:39:27.281 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Mar 02 13:39:27 UTC 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265
+13:39:27.282 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class io.gravitee.management.security.SecurityConfiguration]
+13:39:27.402 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:39:27.686 [gravitee] INFO  i.g.m.s.c.b.BasicSecurityConfigurerAdapter - Loading security providers for basic authentication
+13:39:27.687 [gravitee] INFO  i.g.m.p.l.a.LdapAuthenticationProvider - Configuring LDAP provider []
+13:39:28.060 [gravitee] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@451816fd, org.springframework.security.web.context.SecurityContextPersistenceFilter@d0b814d, org.springframework.security.web.header.HeaderWriterFilter@2a1e57c6, org.springframework.security.web.authentication.logout.LogoutFilter@45dde6ac, io.gravitee.management.security.config.basic.filter.CORSFilter@56e5c8fb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@356b6b5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ba4f370, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30ec211a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45cd8607, org.springframework.security.web.session.SessionManagementFilter@36dafa24, org.springframework.security.web.access.ExceptionTranslationFilter@6987a133, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20b54cfe]
+13:39:28.097 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 817 ms
+13:39:29.286 [gravitee] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+13:39:29.480 [gravitee] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3111631d{/management,null,AVAILABLE}
+13:39:29.493 [gravitee] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@3f91bd47{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+13:39:29.494 [gravitee] INFO  org.eclipse.jetty.server.Server - Started @9790ms
+13:39:29.496 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [8c713e0fbd27 - null] started in 2435 ms.
+13:51:20.515 [gravitee] INFO  i.g.management.standalone.Container - Initializing Gravitee Management Standalone context...
+13:51:20.711 [gravitee] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265: startup date [Wed Mar 02 13:51:20 UTC 2016]; root of context hierarchy
+13:51:21.138 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration.
+13:51:21.142 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - 	Gravitee Management configuration loaded from /home/gravitee/config/gravitee.yml
+13:51:21.209 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration. DONE
+13:51:21.256 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [management] implementation: mongodb
+13:51:21.261 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:51:21.267 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.mongodb.management.ManagementRepositoryConfiguration
+13:51:21.487 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [analytics] implementation: elasticsearch
+13:51:21.489 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:51:21.491 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.elasticsearch.analytics.spring.AnalyticsRepositoryConfiguration
+13:51:21.499 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Loading Management providers Provider
+13:51:21.502 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Found 3 Provider implementation(s)
+13:51:21.504 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider RepositoryProvider [gravitee]
+13:51:21.509 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:51:21.510 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:51:21.519 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider InMemoryProvider [memory]
+13:51:21.523 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider LdapProvider [ldap]
+13:51:21.527 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:51:21.528 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:51:21.599 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:51:21.664 [gravitee] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$c6368cdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:51:21.982 [gravitee] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[172.17.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:51:21.982 [gravitee] INFO  org.mongodb.driver.cluster - Adding discovered server 172.17.0.1:27017 to client view of cluster
+13:51:22.133 [cluster-ClusterId{value='56d6efd94cedfd00149024ab', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1}] to 172.17.0.1:27017
+13:51:22.135 [cluster-ClusterId{value='56d6efd94cedfd00149024ab', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=172.17.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 4, 14]}, minWireVersion=0, maxWireVersion=0, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=858407}
+13:51:22.136 [cluster-ClusterId{value='56d6efd94cedfd00149024ab', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+13:51:22.538 [gravitee] INFO  org.dozer.config.GlobalSettings - Trying to find Dozer configuration file: dozer.properties
+13:51:22.549 [gravitee] WARN  org.dozer.config.GlobalSettings - Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+13:51:22.552 [gravitee] INFO  org.dozer.DozerInitializer - Initializing Dozer. Version: 5.4.0, Thread Name: gravitee
+13:51:22.556 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+13:51:22.558 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+13:51:22.563 [gravitee] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
+13:51:23.717 [gravitee] INFO  org.elasticsearch.plugins - [Mesmero] loaded [], sites []
+13:51:24.403 [gravitee] INFO  o.s.s.l.DefaultSpringSecurityContextSource -  URL 'ldap://127.0.0.1:33389/dc=gravitee,dc=io', root DN is 'dc=gravitee,dc=io'
+13:51:24.840 [gravitee] INFO  o.s.l.c.s.AbstractContextSource - Property 'userDn' not set - anonymous context will be used for read-write operations
+13:51:24.845 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Setting working directory for LDAP_PROVIDER: /tmp/apacheds-spring-security-21757432282351
+13:51:24.911 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Starting directory server...
+13:51:24.912 [gravitee] WARN  o.a.d.s.core.DefaultDirectoryService - ApacheDS shutdown hook has NOT been registered with the runtime.  This default setting for standalone operation has been overriden.
+13:51:25.467 [gravitee] ERROR o.a.d.s.s.r.DefaultAttributeTypeRegistry - attributeType w/ OID 2.5.4.16 not registered!
+13:51:26.059 [gravitee] INFO  o.a.d.s.c.security.TlsKeyGenerator - Keys and self signed certificate successfully generated.
+13:51:26.200 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Successful bind of an LDAP Service (33389) is completed.
+13:51:26.200 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Ldap service started.
+13:51:26.210 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Loading LDIF file: jar:file:/home/gravitee/lib/gravitee-management-api-providers-ldap-0.5.0.jar!/ldap/gravitee-io-management-rest-api-ldap-test.ldif
+13:51:26.212 [gravitee] ERROR o.a.d.s.p.s.store.LdifFileLoader - LDIF file does not exist.
+13:51:26.347 [gravitee] INFO  org.eclipse.jetty.util.log - Logging initialized @6311ms
+13:51:26.600 [gravitee] INFO  i.g.management.standalone.Container - Start Gravitee Management Standalone...
+13:51:26.601 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [8c713e0fbd27] is now starting...
+13:51:26.601 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginEventListener
+13:51:26.602 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+13:51:26.603 [gravitee] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+13:51:26.605 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginRegistry
+13:51:26.606 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:51:26.606 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+13:51:26.611 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /home/gravitee/plugins
+13:51:26.616 [gravitee] WARN  i.g.p.c.internal.PluginRegistryImpl - No plugin has been found in /home/gravitee/plugins
+13:51:26.616 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry. DONE
+13:51:26.617 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: JettyEmbeddedContainer
+13:51:26.656 [gravitee] WARN  o.e.j.server.handler.ContextHandler - o.e.j.s.ServletContextHandler@283ab206{/,null,null} contextPath ends with /*
+13:51:26.720 [gravitee] INFO  org.eclipse.jetty.server.Server - jetty-9.3.3.v20150827
+13:51:26.749 [gravitee] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /home/gravitee/logs/gravitee_accesslog_2016_03_02.log
+13:51:26.787 [gravitee] INFO  /management - Initializing Spring root WebApplicationContext
+13:51:26.787 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+13:51:26.788 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Mar 02 13:51:26 UTC 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265
+13:51:26.791 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class io.gravitee.management.security.SecurityConfiguration]
+13:51:26.875 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:51:27.108 [gravitee] INFO  i.g.m.s.c.b.BasicSecurityConfigurerAdapter - Loading security providers for basic authentication
+13:51:27.108 [gravitee] INFO  i.g.m.p.l.a.LdapAuthenticationProvider - Configuring LDAP provider []
+13:51:27.356 [gravitee] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@223967ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f61e002, org.springframework.security.web.header.HeaderWriterFilter@25de8898, org.springframework.security.web.authentication.logout.LogoutFilter@2a1e57c6, io.gravitee.management.security.config.basic.filter.CORSFilter@4a6a6a69, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3c17bd0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f179f51, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6164e137, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d7f1e59, org.springframework.security.web.session.SessionManagementFilter@64910b2d, org.springframework.security.web.access.ExceptionTranslationFilter@54567b05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54329480]
+13:51:27.383 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 596 ms
+13:51:28.356 [gravitee] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+13:51:28.585 [gravitee] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@283ab206{/management,null,AVAILABLE}
+13:51:28.594 [gravitee] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@5c740c5a{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+13:51:28.595 [gravitee] INFO  org.eclipse.jetty.server.Server - Started @8559ms
+13:51:28.596 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [8c713e0fbd27 - null] started in 1994 ms.
+13:53:15.486 [gravitee] INFO  i.g.management.standalone.Container - Initializing Gravitee Management Standalone context...
+13:53:15.837 [gravitee] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265: startup date [Wed Mar 02 13:53:15 UTC 2016]; root of context hierarchy
+13:53:16.764 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration.
+13:53:16.773 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - 	Gravitee Management configuration loaded from /home/gravitee/config/gravitee.yml
+13:53:16.920 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration. DONE
+13:53:17.041 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [management] implementation: mongodb
+13:53:17.050 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:53:17.057 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.mongodb.management.ManagementRepositoryConfiguration
+13:53:17.571 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [analytics] implementation: elasticsearch
+13:53:17.573 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:53:17.576 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.elasticsearch.analytics.spring.AnalyticsRepositoryConfiguration
+13:53:17.628 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Loading Management providers Provider
+13:53:17.643 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Found 3 Provider implementation(s)
+13:53:17.646 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider RepositoryProvider [gravitee]
+13:53:17.653 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:53:17.654 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:53:17.674 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider InMemoryProvider [memory]
+13:53:17.682 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider LdapProvider [ldap]
+13:53:17.684 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:53:17.689 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:53:17.853 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:53:17.962 [gravitee] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$c6368cdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:53:18.553 [gravitee] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[172.17.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:53:18.553 [gravitee] INFO  org.mongodb.driver.cluster - Adding discovered server 172.17.0.1:27017 to client view of cluster
+13:53:18.976 [cluster-ClusterId{value='56d6f04e4cedfd0017825dee', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:2}] to 172.17.0.1:27017
+13:53:18.988 [cluster-ClusterId{value='56d6f04e4cedfd0017825dee', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=172.17.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 4, 14]}, minWireVersion=0, maxWireVersion=0, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=6491920}
+13:53:18.989 [cluster-ClusterId{value='56d6f04e4cedfd0017825dee', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+13:53:19.590 [gravitee] INFO  org.dozer.config.GlobalSettings - Trying to find Dozer configuration file: dozer.properties
+13:53:19.601 [gravitee] WARN  org.dozer.config.GlobalSettings - Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+13:53:19.605 [gravitee] INFO  org.dozer.DozerInitializer - Initializing Dozer. Version: 5.4.0, Thread Name: gravitee
+13:53:19.613 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+13:53:19.615 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+13:53:19.623 [gravitee] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
+13:53:20.876 [gravitee] INFO  org.elasticsearch.plugins - [Agron] loaded [], sites []
+13:53:21.623 [gravitee] INFO  o.s.s.l.DefaultSpringSecurityContextSource -  URL 'ldap://127.0.0.1:33389/dc=gravitee,dc=io', root DN is 'dc=gravitee,dc=io'
+13:53:22.072 [gravitee] INFO  o.s.l.c.s.AbstractContextSource - Property 'userDn' not set - anonymous context will be used for read-write operations
+13:53:22.076 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Setting working directory for LDAP_PROVIDER: /tmp/apacheds-spring-security-21874663167260
+13:53:22.134 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Starting directory server...
+13:53:22.134 [gravitee] WARN  o.a.d.s.core.DefaultDirectoryService - ApacheDS shutdown hook has NOT been registered with the runtime.  This default setting for standalone operation has been overriden.
+13:53:22.612 [gravitee] ERROR o.a.d.s.s.r.DefaultAttributeTypeRegistry - attributeType w/ OID 2.5.4.16 not registered!
+13:53:23.202 [gravitee] INFO  o.a.d.s.c.security.TlsKeyGenerator - Keys and self signed certificate successfully generated.
+13:53:23.360 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Successful bind of an LDAP Service (33389) is completed.
+13:53:23.360 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Ldap service started.
+13:53:23.373 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Loading LDIF file: jar:file:/home/gravitee/lib/gravitee-management-api-providers-ldap-0.5.0.jar!/ldap/gravitee-io-management-rest-api-ldap-test.ldif
+13:53:23.375 [gravitee] ERROR o.a.d.s.p.s.store.LdifFileLoader - LDIF file does not exist.
+13:53:23.515 [gravitee] INFO  org.eclipse.jetty.util.log - Logging initialized @8962ms
+13:53:23.783 [gravitee] INFO  i.g.management.standalone.Container - Start Gravitee Management Standalone...
+13:53:23.784 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [8c713e0fbd27] is now starting...
+13:53:23.784 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginEventListener
+13:53:23.785 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+13:53:23.785 [gravitee] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+13:53:23.791 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginRegistry
+13:53:23.793 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:53:23.794 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+13:53:23.798 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /home/gravitee/plugins
+13:53:23.808 [gravitee] WARN  i.g.p.c.internal.PluginRegistryImpl - No plugin has been found in /home/gravitee/plugins
+13:53:23.808 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry. DONE
+13:53:23.808 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: JettyEmbeddedContainer
+13:53:23.839 [gravitee] WARN  o.e.j.server.handler.ContextHandler - o.e.j.s.ServletContextHandler@3111631d{/,null,null} contextPath ends with /*
+13:53:23.899 [gravitee] INFO  org.eclipse.jetty.server.Server - jetty-9.3.3.v20150827
+13:53:23.926 [gravitee] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /home/gravitee/logs/gravitee_accesslog_2016_03_02.log
+13:53:23.957 [gravitee] INFO  /management - Initializing Spring root WebApplicationContext
+13:53:23.958 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+13:53:23.958 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Mar 02 13:53:23 UTC 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265
+13:53:23.959 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class io.gravitee.management.security.SecurityConfiguration]
+13:53:24.033 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:53:24.224 [gravitee] INFO  i.g.m.s.c.b.BasicSecurityConfigurerAdapter - Loading security providers for basic authentication
+13:53:24.225 [gravitee] INFO  i.g.m.p.l.a.LdapAuthenticationProvider - Configuring LDAP provider []
+13:53:24.449 [gravitee] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@451816fd, org.springframework.security.web.context.SecurityContextPersistenceFilter@d0b814d, org.springframework.security.web.header.HeaderWriterFilter@2a1e57c6, org.springframework.security.web.authentication.logout.LogoutFilter@45dde6ac, io.gravitee.management.security.config.basic.filter.CORSFilter@56e5c8fb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@356b6b5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ba4f370, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30ec211a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45cd8607, org.springframework.security.web.session.SessionManagementFilter@36dafa24, org.springframework.security.web.access.ExceptionTranslationFilter@6987a133, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20b54cfe]
+13:53:24.481 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 523 ms
+13:53:25.480 [gravitee] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+13:53:25.682 [gravitee] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3111631d{/management,null,AVAILABLE}
+13:53:25.691 [gravitee] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@14d81f2c{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+13:53:25.696 [gravitee] INFO  org.eclipse.jetty.server.Server - Started @11142ms
+13:53:25.698 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [8c713e0fbd27 - null] started in 1913 ms.
+13:53:52.499 [gravitee] INFO  i.g.management.standalone.Container - Initializing Gravitee Management Standalone context...
+13:53:52.730 [gravitee] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265: startup date [Wed Mar 02 13:53:52 UTC 2016]; root of context hierarchy
+13:53:53.186 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration.
+13:53:53.194 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - 	Gravitee Management configuration loaded from /home/gravitee/config/gravitee.yml
+13:53:53.280 [gravitee] INFO  i.g.m.r.s.PropertiesConfiguration - Loading Gravitee Management configuration. DONE
+13:53:53.330 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [analytics] implementation: elasticsearch
+13:53:53.336 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:53:53.341 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.elasticsearch.analytics.spring.AnalyticsRepositoryConfiguration
+13:53:53.349 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - Looking for a repository [management] implementation: mongodb
+13:53:53.351 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Found 2 Repository implementation(s)
+13:53:53.361 [gravitee] INFO  i.g.m.r.r.RepositoryBeanFactoryPostProcessor - 	Registering repository extension: io.gravitee.repository.mongodb.management.ManagementRepositoryConfiguration
+13:53:53.595 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Loading Management providers Provider
+13:53:53.598 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Found 3 Provider implementation(s)
+13:53:53.599 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider RepositoryProvider [gravitee]
+13:53:53.604 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:53:53.605 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.repository.spring.RepositoryConfiguration
+13:53:53.615 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider InMemoryProvider [memory]
+13:53:53.617 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - Registering a provider LdapProvider [ldap]
+13:53:53.620 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Registering provider extension: io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:53:53.620 [gravitee] INFO  i.g.m.p.c.s.ProviderBeanFactoryPostProcessor - 	Loading @Configuration from previous extension io.gravitee.management.providers.ldap.spring.LdapConfiguration
+13:53:53.687 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:53:53.753 [gravitee] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$c6368cdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:53:54.059 [gravitee] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[172.17.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:53:54.059 [gravitee] INFO  org.mongodb.driver.cluster - Adding discovered server 172.17.0.1:27017 to client view of cluster
+13:53:54.217 [cluster-ClusterId{value='56d6f0724cedfd0015b0a167', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1}] to 172.17.0.1:27017
+13:53:54.219 [cluster-ClusterId{value='56d6f0724cedfd0015b0a167', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=172.17.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 4, 14]}, minWireVersion=0, maxWireVersion=0, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=1147948}
+13:53:54.220 [cluster-ClusterId{value='56d6f0724cedfd0015b0a167', description='null'}-172.17.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+13:53:54.664 [gravitee] INFO  org.dozer.config.GlobalSettings - Trying to find Dozer configuration file: dozer.properties
+13:53:54.674 [gravitee] WARN  org.dozer.config.GlobalSettings - Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+13:53:54.677 [gravitee] INFO  org.dozer.DozerInitializer - Initializing Dozer. Version: 5.4.0, Thread Name: gravitee
+13:53:54.681 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+13:53:54.683 [gravitee] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+13:53:54.689 [gravitee] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
+13:53:56.021 [gravitee] INFO  org.elasticsearch.plugins - [King Bedlam] loaded [], sites []
+13:53:56.958 [gravitee] INFO  o.s.s.l.DefaultSpringSecurityContextSource -  URL 'ldap://127.0.0.1:33389/dc=gravitee,dc=io', root DN is 'dc=gravitee,dc=io'
+13:53:57.372 [gravitee] INFO  o.s.l.c.s.AbstractContextSource - Property 'userDn' not set - anonymous context will be used for read-write operations
+13:53:57.378 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Setting working directory for LDAP_PROVIDER: /tmp/apacheds-spring-security-21909964418114
+13:53:57.448 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Starting directory server...
+13:53:57.449 [gravitee] WARN  o.a.d.s.core.DefaultDirectoryService - ApacheDS shutdown hook has NOT been registered with the runtime.  This default setting for standalone operation has been overriden.
+13:53:57.955 [gravitee] ERROR o.a.d.s.s.r.DefaultAttributeTypeRegistry - attributeType w/ OID 2.5.4.16 not registered!
+13:53:58.614 [gravitee] INFO  o.a.d.s.c.security.TlsKeyGenerator - Keys and self signed certificate successfully generated.
+13:53:58.783 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Successful bind of an LDAP Service (33389) is completed.
+13:53:58.783 [gravitee] INFO  o.a.directory.server.ldap.LdapServer - Ldap service started.
+13:53:58.801 [gravitee] INFO  o.s.s.ldap.server.ApacheDSContainer - Loading LDIF file: jar:file:/home/gravitee/lib/gravitee-management-api-providers-ldap-0.5.0.jar!/ldap/gravitee-io-management-rest-api-ldap-test.ldif
+13:53:58.804 [gravitee] ERROR o.a.d.s.p.s.store.LdifFileLoader - LDIF file does not exist.
+13:53:58.961 [gravitee] INFO  org.eclipse.jetty.util.log - Logging initialized @7114ms
+13:53:59.242 [gravitee] INFO  i.g.management.standalone.Container - Start Gravitee Management Standalone...
+13:53:59.243 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [8c713e0fbd27] is now starting...
+13:53:59.243 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginEventListener
+13:53:59.244 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+13:53:59.244 [gravitee] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+13:53:59.246 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: PluginRegistry
+13:53:59.247 [gravitee] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:53:59.247 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+13:53:59.252 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /home/gravitee/plugins
+13:53:59.258 [gravitee] WARN  i.g.p.c.internal.PluginRegistryImpl - No plugin has been found in /home/gravitee/plugins
+13:53:59.258 [gravitee] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry. DONE
+13:53:59.258 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - 	Starting component: JettyEmbeddedContainer
+13:53:59.291 [gravitee] WARN  o.e.j.server.handler.ContextHandler - o.e.j.s.ServletContextHandler@50122012{/,null,null} contextPath ends with /*
+13:53:59.360 [gravitee] INFO  org.eclipse.jetty.server.Server - jetty-9.3.3.v20150827
+13:53:59.399 [gravitee] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /home/gravitee/logs/gravitee_accesslog_2016_03_02.log
+13:53:59.432 [gravitee] INFO  /management - Initializing Spring root WebApplicationContext
+13:53:59.433 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+13:53:59.433 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Mar 02 13:53:59 UTC 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e853265
+13:53:59.435 [gravitee] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class io.gravitee.management.security.SecurityConfiguration]
+13:53:59.540 [gravitee] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:53:59.756 [gravitee] INFO  i.g.m.s.c.b.BasicSecurityConfigurerAdapter - Loading security providers for basic authentication
+13:53:59.757 [gravitee] INFO  i.g.m.p.l.a.LdapAuthenticationProvider - Configuring LDAP provider []
+13:54:00.080 [gravitee] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f172892, org.springframework.security.web.context.SecurityContextPersistenceFilter@1934339, org.springframework.security.web.header.HeaderWriterFilter@5f61e002, org.springframework.security.web.authentication.logout.LogoutFilter@d0b814d, io.gravitee.management.security.config.basic.filter.CORSFilter@5409dfdd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6684f7f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1eab8437, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68d6f48e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45f9d394, org.springframework.security.web.session.SessionManagementFilter@2fac80a8, org.springframework.security.web.access.ExceptionTranslationFilter@7d3bf8db, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@223967ea]
+13:54:00.110 [gravitee] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 677 ms
+13:54:01.008 [gravitee] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+13:54:01.179 [gravitee] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@50122012{/management,null,AVAILABLE}
+13:54:01.186 [gravitee] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@4f2fdf3d{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+13:54:01.187 [gravitee] INFO  org.eclipse.jetty.server.Server - Started @9341ms
+13:54:01.188 [gravitee] INFO  i.g.m.standalone.node.ManagementNode - Gravitee Management [8c713e0fbd27 - null] started in 1944 ms.
